@@ -45,14 +45,6 @@ Controls: **WASD** or **arrow keys** to move, **mouse** to aim, **left click** t
 
 **Repository:** [https://github.com/JADA937/CMAA5043_Lab5](https://github.com/JADA937/CMAA5043_Lab5)
 
-To upload the same files as your zip (excluding `node_modules` and `dist`), install [Git for Windows](https://git-scm.com/downloads), then in this folder run:
-
-```powershell
-.\push-lab5.ps1
-```
-
-Sign in to GitHub when prompted (or use a personal access token for HTTPS).
-
 ## Project Structure (Key Files)
 
 - `src/App.jsx` — tabs including **Lab 5 Tank**
