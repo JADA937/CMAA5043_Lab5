@@ -1,0 +1,20 @@
+# Dependencies & build (Lab 5 / Vite — keep repo aligned with zip; run npm install locally)
+node_modules/
+dist/
+
+# Submission archives (keep locally for zip; do not push to GitHub)
+*.zip
+
+# Logs & local env
+*.log
+npm-debug.log*
+.env
+.env.*.local
+
+# Editor / OS
+.DS_Store
+Thumbs.db
+*.swp
+.idea/
+.vscode/*
+!.vscode/extensions.json

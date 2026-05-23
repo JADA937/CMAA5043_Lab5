@@ -1,0 +1,271 @@
+.appShell {
+  min-height: 100vh;
+  padding: 24px;
+}
+
+.topBar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 18px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(10px);
+}
+
+.appTitle {
+  margin: 0;
+  font-size: 24px;
+  letter-spacing: 0.2px;
+}
+
+.appSub {
+  margin: 6px 0 0;
+  opacity: 0.85;
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+}
+
+.tab {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: inherit;
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+.tab.active {
+  background: rgba(108, 140, 255, 0.2);
+  border-color: rgba(108, 140, 255, 0.5);
+}
+
+.page {
+  margin-top: 16px;
+  display: grid;
+  gap: 16px;
+}
+
+.panel {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 18px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.coursesWrap {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+}
+
+.courseCard {
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 14px;
+  background: rgba(5, 10, 30, 0.65);
+}
+
+.courseTitle {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.courseMeta,
+.courseDesc,
+.courseStudents {
+  margin: 6px 0;
+  opacity: 0.95;
+}
+
+.courseDesc {
+  opacity: 0.9;
+}
+
+.courseControls {
+  display: flex;
+  gap: 8px;
+  margin-top: 10px;
+}
+
+.btn {
+  width: 44px;
+  height: 36px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: inherit;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.portfolio .hero {
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.portfolio .hero h1 {
+  margin: 0;
+}
+
+.portfolio .hero p {
+  margin: 8px 0 0;
+  opacity: 0.85;
+}
+
+.grid2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: 12px;
+}
+
+@media (max-width: 720px) {
+  .topBar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .grid2 {
+    grid-template-columns: 1fr;
+  }
+}
+
+.card {
+  margin-top: 12px;
+  padding: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.projects {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.projectItem {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 14px;
+  padding: 14px;
+  background: rgba(0, 0, 0, 0.18);
+}
+
+.projectItem h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+
+/* Lab 3: Gallery layout + dark mode toggle UI */
+.aboutHeaderRow {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.aboutTitle {
+  margin: 0;
+}
+
+.modeToggle {
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: inherit;
+  width: 44px;
+  height: 36px;
+  border-radius: 12px;
+  cursor: pointer;
+  font-size: 18px;
+  line-height: 1;
+}
+
+.galleryCard {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: 1.1fr 1.4fr;
+  gap: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  padding: 12px;
+  background: rgba(0, 0, 0, 0.12);
+}
+
+.galleryImageWrap {
+  border-radius: 14px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  min-height: 180px;
+}
+
+.galleryImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.galleryTitle {
+  margin: 0 0 8px;
+  font-size: 18px;
+}
+
+.galleryMeta,
+.galleryDesc {
+  margin: 6px 0;
+}
+
+.moreBtn {
+  margin-top: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  background: rgba(255, 255, 255, 0.06);
+  color: inherit;
+  padding: 10px 12px;
+  border-radius: 12px;
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .galleryCard {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Lab 5: tank game layout */
+.tankGameWrap {
+  display: grid;
+  gap: 16px;
+}
+
+.tankCanvasOuter {
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  border-radius: 12px;
+  overflow: hidden;
+  max-width: min(100%, 820px);
+  background: #0a0f18;
+}
+
+.tankCanvas {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: middle;
+}
+
+.tankHelpList {
+  margin: 10px 0 0;
+  padding-left: 20px;
+  opacity: 0.9;
+}
+
